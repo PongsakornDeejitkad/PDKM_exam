@@ -9,9 +9,6 @@ func flipBits(number int) int {
 	for temp := number; temp > 0; temp /= 2 {
 		numBits++
 	}
-
-    fmt.Print(numBits)
-
 	flippedNumber := number ^ ((1 << numBits)-1)
 
 	return flippedNumber
